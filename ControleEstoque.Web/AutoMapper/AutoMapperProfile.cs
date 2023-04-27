@@ -14,6 +14,11 @@ namespace ControleEstoque.Web
                 cfg.CreateMap<PerfilViewModel, PerfilModel>().ReverseMap();
                 cfg.CreateMap<MarcaProdutoViewModel, MarcaProdutoModel>().ReverseMap();
                 cfg.CreateMap<UsuarioViewModel, UsuarioModel>().ReverseMap();
+                cfg.CreateMap<LocalArmazenamentoViewModel, LocalArmazenamentoModel>().ReverseMap();
+                cfg.CreateMap<PaisViewModel, PaisModel>().ReverseMap();
+                cfg.CreateMap<EstadoViewModel, EstadoModel>().ReverseMap();
+                cfg.CreateMap<CidadeViewModel, CidadeModel>().ReverseMap();
+                cfg.CreateMap<FornecedorViewModel, FornecedorModel>().ReverseMap();
             }).CreateMapper();
 
             return config;

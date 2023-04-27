@@ -170,6 +170,11 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="AutoMapper\AutoMapperProfile.cs" />
+    <Compile Include="Controllers\Cadastro\CadFornecedorController.cs" />
+    <Compile Include="Controllers\Cadastro\CadCidadeController.cs" />
+    <Compile Include="Controllers\Cadastro\CadEstadoController.cs" />
+    <Compile Include="Controllers\Cadastro\CadPaisController.cs" />
+    <Compile Include="Controllers\Cadastro\CadLocalArmazenamentoController.cs" />
     <Compile Include="Controllers\Cadastro\CadGrupoProdutoController.cs" />
     <Compile Include="Controllers\Cadastro\CadPerfilController.cs" />
     <Compile Include="Controllers\Cadastro\CadUsuarioController.cs" />
@@ -187,7 +192,23 @@
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\ContextoBD.cs" />
+    <Compile Include="Models\Domain\Tipos.cs" />
+    <Compile Include="Models\Domain\FornecedorModel.cs" />
+    <Compile Include="Models\Domain\CidadeModel.cs" />
+    <Compile Include="Models\Domain\EstadoModel.cs" />
+    <Compile Include="Models\Domain\PaisModel.cs" />
+    <Compile Include="Models\Domain\LocalArmazenamentoModel.cs" />
     <Compile Include="Models\Domain\GrupoProdutoModel.cs" />
+    <Compile Include="Models\Maps\FornecedorMap.cs" />
+    <Compile Include="Models\Maps\CidadeMap.cs" />
+    <Compile Include="Models\Maps\EstadoMap.cs" />
+    <Compile Include="Models\Maps\PaisMap.cs" />
+    <Compile Include="Models\Maps\LocalArmazenamentoMap.cs" />
+    <Compile Include="Models\ViewModel\FornecedorViewModel.cs" />
+    <Compile Include="Models\ViewModel\CidadeViewModel.cs" />
+    <Compile Include="Models\ViewModel\EstadoViewModel.cs" />
+    <Compile Include="Models\ViewModel\PaisViewModel.cs" />
+    <Compile Include="Models\ViewModel\LocalArmazenamentoViewModel.cs" />
     <Compile Include="Models\ViewModel\GrupoProdutoViewModel.cs" />
     <Compile Include="Models\ViewModel\LoginViewModel.cs" />
     <Compile Include="Models\Domain\MarcaProdutoModel.cs" />
@@ -285,6 +306,11 @@
     <Content Include="Views\Shared\_Cadastro.cshtml" />
     <Content Include="Views\CadPerfil\Index.cshtml" />
     <Content Include="Views\CadMarcaProduto\Index.cshtml" />
+    <Content Include="Views\CadLocalArmazenamento\Index.cshtml" />
+    <Content Include="Views\CadPais\Index.cshtml" />
+    <Content Include="Views\CadEstado\Index.cshtml" />
+    <Content Include="Views\CadCidade\Index.cshtml" />
+    <Content Include="Views\CadFornecedor\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
